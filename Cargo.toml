@@ -1,0 +1,18 @@
+[package]
+name = "smol-wamp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Async support
+smol = "1.2.5"
+async-channel = "1.7.1"
+async-mutex = "1.4.0"
+
+# Used for WAMP protocol
+bytes = "1.2.1"
+serde = { version = "1.0.142", features = ["derive"] }
+serde_json = "1.0.83"
+
